@@ -1,0 +1,109 @@
+Person 1 — Core System & User Management
+Apps
+accounts/
+students/
+faculty/
+Responsibilities
+Accounts
+Custom User Model
+Authentication
+Login/Logout
+User Roles
+Admin
+Faculty
+Student
+Students
+Student CRUD
+Student Search
+Student Profiles
+Faculty
+Faculty CRUD
+Faculty Assignment
+Models
+User
+Student
+Faculty
+APIs
+/api/login/
+/api/logout/
+
+/api/students/
+/api/students/<id>/
+
+/api/faculty/
+/api/faculty/<id>/
+Deliverables
+Models
+Views
+URLs
+Forms/Serializers
+Unit Tests
+Person 2 — Academic System
+Apps
+courses/
+attendance/
+marks/
+dashboard/
+Responsibilities
+Courses
+Create Course
+Update Course
+Assign Faculty
+Attendance
+Mark Attendance
+Attendance Reports
+Attendance Percentage
+Marks
+Add Marks
+Update Marks
+Grade Calculation
+Dashboard
+Statistics APIs
+Reports APIs
+Models
+Course
+Attendance
+Marks
+APIs
+/ api/courses/
+/ api/attendance/
+/ api/marks/
+/ api/dashboard/
+Deliverables
+Models
+Views
+URLs
+Unit Tests
+Report Logic
+Shared Responsibilities
+Database Design
+
+Both must agree on relationships before coding.
+
+User
+├── Student
+└── Faculty
+
+Faculty
+└── Course
+
+Student
+├── Attendance
+└── Marks
+
+Course
+├── Attendance
+└── Marks
+Git Branches
+Person 1
+feature/accounts
+feature/students
+feature/faculty
+Person 2
+feature/courses
+feature/attendance
+feature/marks
+feature/dashboard
+Integration
+develop
+main
